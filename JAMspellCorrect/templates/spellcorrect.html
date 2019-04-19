@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Spell Correct</title>
+</head>
+   <body style="background-color:lightgrey;">
+   <h1 style="text-align:center;">HaikuJAM Word Correct </h1>
+   <div align = "center">
+      <form action = "{{ url_for('result') }}"method = "POST">
+		  Enter Word:  <input type = "text" name = "word" pattern="[\0a-zA-Z-]+" title="Search text should only be a single word character." required = "required" />
+         <p><input type = "submit" value = "Submit" /></p>
+      </form>
+	  <p> <h2> Correct Words </h2></p>
+	 <table border = 1>
+				<tr>
+			 {% for  value in result %}
+				    <th>{{ value }}</th>
+				</tr>
+			 {% endfor %}
+		  </table>
+   </div>
+	</body>
+</html>
