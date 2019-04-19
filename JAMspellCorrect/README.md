@@ -10,4 +10,4 @@ Procedure to execute the code
 
 3. On terminal enter "python jam_spell.py"
 
-4. On any web browser open "http://127.0.0.1:5000/spellCorrect"
+4. On any web browser open "http://<ip-address>:5000/spellCorrect"
